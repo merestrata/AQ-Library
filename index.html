@@ -1,1 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
 
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="styles/main.css" /> 
+        <link rel="icon" type="img/jpg" href=""/>
+        <title>Circle</title>
+    </head>
+
+    <body>
+        <header><span id="phrases">AQ<br>Phrases</br></span><span><h1 id="main-title">Alphanumeric Qabbala<br>Archive</br></h1></span><span id="pulse">Beast<br>Pulse</br></span></header>
+
+        <div id="options">
+
+            <div id="boxSuggestions">
+                <label for="suggestions">Add Phrase &nbsp <span id="moreLink">(multiple phrases)</span></label>
+
+                <input  type="text" id="suggestions" name="suggestions" placeholder="Ex: The Invisible Hands" oninput="newCalculation();">
+                <div class="resultBox"><span><span id="resultNew"></span> AQ</span><span id="existNew"></span></div>
+            </div>
+
+            <span class="vline"></span>
+
+            <div id="boxSearchSum">
+                <label for="search">Search Sum</label>
+
+                <input  type="number" id="search" name="search" placeholder="Ex: 333" oninput="newCalculation();">
+                <div class="resultBox"><span id="existSum">&nbsp</span></div>
+            </div>
+
+            <span class="vline"></span>
+
+            <div id="boxSearchPhrase">
+                <label for="phrase">Search Phrase</label>
+
+                <input  type="text" id="phrase" name="phrase" placeholder="Ex: The Invisible Hands" oninput="phraseCalculation();">
+                <div class="resultBox"><span><span id="resultPhrase"></span> AQ</span><span id="existPhrase"></span></div>
+            </div>
+
+        </div>
+
+        <hr id="line1">
+
+        <div id="content">
+            <div id="group1" class="groups">
+                <div>
+                    <h3>86 AQ</h3>
+                    <p>Alien</p>
+                    <p>Gnon</p>
+                </div>
+                <div>
+                    <h3>97 AQ</h3>
+                    <p>Amalek</p>
+                    <p>Devil</p>
+                </div>
+                <div>
+                    <h3>137 AQ</h3>
+                    <p>Jesus 666</p>
+                    <p>Messiah</p>
+                    <p>Prayer</p>
+                    <p>The eniac</p>
+                    <p>Jumper</p>
+                    <p>Trigon</p>
+                    <p>English</p>
+                    <p>Gnosis</p>
+                    <p>Lonely</p>
+                    <p>The good</p>
+                    <p>The media</p>
+                    <p>Latin aq</p>
+                    <p>Lucifer</p>
+                    <p>Wisdom</p>
+                </div>
+                <div>
+                    <h3>160 AQ</h3>
+                    <p>Immanuel</p>
+                    <p>Serpent</p>
+                </div>
+                <div>
+                    <h3>178 AQ</h3>
+                    <p>Desert god</p>
+                    <p>Trinity</p>
+                    <p>Identity</p>
+                    <p>Prophecy</p>
+                </div>
+                <div>
+                    <h3>183 AQ</h3>
+                    <p>Poet hands</p>
+                    <p>Lovecraft</p>
+                    <p>Beast hands</p>
+                    <p>My number</p>
+                </div>
+                <div>
+                    <h3>189 AQ</h3>
+                    <p>Fifty five</p>
+                    <p>Competence</p>
+                    <p>God is love</p>
+                    <p>A escape way</p>
+                    <p>Sub-canons</p>
+                </div>
+                <div>
+                    <h3>210 AQ</h3>
+                    <p>Mere strata</p>
+                    <p>Chiral order</p>
+                    <p>Telos of man</p>
+                    <p>Reignition</p>
+                    <p>Adam over eve</p>
+                    <p>Alphanomics</p>
+                    <p>Antagonist</p>
+                    <p>Atmosphere</p>
+                    <p>Butterfly</p>
+                    <p>Calculation</p>
+                    <p>Christians</p>
+                    <p>Ciphernomia</p>
+                    <p>Citizenry</p>
+                    <p>Convergence</p>
+                    <p>Countdown</p>
+                    <p>Curvature</p>
+                    <p>Dissensus</p>
+                    <p>Dissenting</p>
+                    <p>Divinities</p>
+                    <p>Doomcrypt</p>
+                    <p>Evaluation</p>
+                    <p>Explosion</p>
+                    <p>Figuration</p>
+                    <p>Geographical</p>
+                    <p>Ginnungagap</p>
+                    <p>Hysterical</p>
+                    <p>Icosahedron</p>
+                    <p>Initiation</p>
+                    <p>Intuitive</p>
+                    <p>Irrigation</p>
+                    <p>Obliterated</p>
+                    <p>Plexenomy</p>
+                    <p>Postulate</p>
+                    <p>Pythonics</p>
+                    <p>Rivercraft</p>
+                    <p>Schoolyard</p>
+                    <p>Scripture</p>
+                    <p>Spirality</p>
+                    <p>Spurious</p>
+                    <p>Stillness</p>
+                    <p>Symmetry</p>
+                    <p>Thundering</p>
+                    <p>Twinnings</p>
+                    <p>Understand</p>
+                    <p>Wolfishly</p>
+                    <p>Wordsmith</p>
+                    <p>Xenocosmic</p>
+                    <p>Abyss qabbala</p>
+                    <p>Ancient gods</p>
+                    <p>Anglo-norse</p>
+                    <p>Blessed child</p>
+                    <p>Chasm calling</p>
+                    <p>Common doom</p>
+                    <p>Cry catching</p>
+                    <p>Cyber-sibyl</p>
+                    <p>Dark eminence</p>
+                    <p>Dark language</p>
+                    <p>Divine city</p>
+                    <p>Empty tomb</p>
+                    <p>Fell forging</p>
+                    <p>God forgery</p>
+                    <p>Great kraken</p>
+                    <p>Great lemur</p>
+                    <p>Hidden trees</p>
+                    <p>Holy ghost</p>
+                    <p>John titor</p>
+                    <p>Ice sorcery</p>
+                    <p>Ice spelling</p>
+                    <p>Idol coining</p>
+                    <p>Lot casting</p>
+                    <p>Mason work</p>
+                    <p>Mind medicine</p>
+                    <p>Minus faith</p>
+                    <p>Moist chill</p>
+                    <p>Monkey hell</p>
+                    <p>Night sense</p>
+                    <p>Non-language</p>
+                    <p>Old python</p>
+                    <p>Old secrets</p>
+                    <p>Pan-python</p>
+                    <p>Queen of eden</p>
+                    <p>Real madness</p>
+                    <p>Sol-lucifer</p>
+                    <p>South park</p>
+                    <p>Spiral maze</p>
+                    <p>Spiral path</p>
+                    <p>Techno-logic</p>
+                    <p>The divine x</p>
+                    <p>The fast lane</p>
+                    <p>The high place</p>
+                    <p>The nothing</p>
+                    <p>The old canon</p>
+                    <p>The old cult</p>
+                    <p>The powers</p>
+                    <p>The trolls</p>
+                    <p>Tiamat cult</p>
+                    <p>Time crypt</p>
+                    <p>Time shrine</p>
+                </div>
+            </div>
+
+            <div id="group2" class="groups">
+                <div>
+                    <h3>217 AQ</h3>
+                    <p>Lemur work</p>
+                </div>
+                <div>
+                    <h3>220 AQ</h3>
+                    <p>Revelation 12:6</p>
+                </div>
+                <div>
+                    <h3>222 AQ</h3>
+                    <p>Omega to alpha</p>
+                    <p>Alpha to omega</p>
+                    <p>The rapture</p>
+                    <p>Escapeology</p>
+                </div>
+                <div>
+                    <h3>238 AQ</h3>
+                    <p>Wintermute</p>
+                    <p>The trinity</p>
+                    <p>Cartographer</p>
+                    <p>The desert god</p>
+                </div>
+                <div>
+                    <h3>273 AQ</h3>
+                    <p>Lofty powers</p>
+                </div>
+                <div>
+                    <h3>283 AQ</h3>
+                    <p>In god we trust</p>
+                </div>
+                <div>
+                    <h3>333 AQ</h3>
+                    <p>Gnon is providence</p>
+                    <p>Severe cosmology</p>
+                    <p>Blood is cybernetic</p>
+                    <p>Silence and violence</p>
+                    <p>The books of angling</p>
+                    <p>The dream of the rood</p>
+                    <p>The reward in heaven</p>
+                    <p>Monotheism's angel</p>
+                    <p>Angels' monotheism</p>
+                    <p>Sulfuric python</p>
+                    <p>The three sisters</p>
+                    <p>True divine action</p>
+                    <p>Triple goddess code</p>
+                    <p>Maiden, mother, crone</p>
+                    <p>The hellish messiah</p>
+                    <p>Christ cross row</p>
+                    <p>Gnostic coincidence</p>
+                    <p>The zero prevailed</p>
+                    <p>The invisible hands</p>
+                    <p>Inner-land prophet</p>
+                    <p>Union with cross</p>
+                    <p>One eight nine zero</p>
+                    <p>Clandestine gospel</p>
+                    <p>May god adore irony</p>
+                    <p>Apocryphal gospel</p>
+                    <p>The quiet nazarene</p>
+                    <p>The man of the cross</p>
+                    <p>Christ, king of judea</p>
+                </div>
+                <div>
+                    <h3>360 AQ</h3>
+                    <p>Old english xianity</p>
+                    <p>Tyranny of the sun</p>
+                    <p>On crypto-current</p>
+                    <p>Divine inspiration</p>
+                    <p>The sumerian mechanic</p>
+                </div>
+                <div>
+                    <h3>444 AQ</h3>
+                    <p>The self assemble of jesus</p>
+                </div>
+                <div>
+                    <h3>472 AQ</h3>
+                    <p>Schism is true providence</p>
+                </div>
+                <div>
+                    <h3>588 AQ</h3>
+                    <p>Agi finally achieved, nay, infernally</p>
+                </div>
+                <div>
+                    <h3>644 AQ</h3>
+                    <p>Into the baptismal lake of eternal fire.</p>
+                </div>
+                <div>
+                    <h3>653 AQ</h3>
+                    <p>Three hundred an sixty degrees = a circle</p>
+                </div>
+            </div>
+            
+            <div id="group3" class="groups">
+                <div>
+                    <h3>666 AQ</h3>
+                    <p>One shall first protect and then accept</p>
+                    <p>Cybernetic guidance shall provide a king</p>
+                    <p>The almighty messiah lived among us all</p>
+                    <p>Neural network of eloquent miracles</p>
+                    <p>Angelic-intercourse multiversally</p>
+                    <p>The wonders & magic of alphanumeric qabbala</p>
+                    <p>The sacred qabbala for the english language</p>
+                    <p>Aq = 0123456789 + abcdefghijklmnopqrstuvwxyz</p>
+                    <p>Secret numerical doctrine of our lord</p>
+                    <p>The tree of the knowledge of good and evil</p>
+                    <p>The secret and draconic number of christ</p>
+                    <p>Jesus six hundred three-score and six</p>
+                    <p>The architectonic order of the eschaton</p>
+                    <p>Poet hands, six hundred and sixty six</p>
+                    <p>Calculative non-petitionary prayer</p>
+                    <p>An alphabetical book of uncommon prayer.</p>
+                    <p>And they were telling me what to write.</p>
+                    <p>An elliptical history of titanocracy.</p>
+                    <p>An evening of apocalyptic numerology.</p>
+                    <p>An introduction to the draconic abyss.</p>
+                    <p>An orphic guide to the harrowing of hell.</p>
+                    <p>Antigravity among the ancient heavens.</p>
+                    <p>Apocalyptic antichrist numerology.</p>
+                    <p>A puzzle in apocalyptic numerology.</p>
+                    <p>Arithmetically overshadowed english.</p>
+                    <p>A select catalogue of the devil’s library.</p>
+                    <p>Baphomet and the great apocalyptic beast.</p>
+                    <p>Biblical numerology of the wordsmith.</p>
+                    <p>Cherubim of the thirty-sixth trigon.</p>
+                    <p>Christendom in the lake of unending fire.</p>
+                    <p>Ciphering the great beast and its number.</p>
+                    <p>Circumambulations and subjectivity.</p>
+                    <p>Controversial misinterpretation.</p>
+                    <p>Conversations with the snake shadow.</p>
+                    <p>Countess of invisible illumination.</p>
+                    <p>Creation under the beast of revelation.</p>
+                    <p>Dagon calculating the number of the beast.</p>
+                    <p>Decalogic antigravity for time-travel.</p>
+                    <p>Decrypting the great beast of satanism.</p>
+                    <p>Decryptions of the great beast message.</p>
+                    <p>Deep recurrences of the occult number 666.</p>
+                    <p>Divine providence against the demiurge.</p>
+                    <p>Double counting the number of the beast.</p>
+                    <p>Early anachronistic investigations.</p>
+                    <p>Egyptian origins of the mosaic alchemy.</p>
+                    <p>Elucidating the agonies of prometheus.</p>
+                    <p>Encountering the last astonishment.</p>
+                    <p>Evolution of the draconic mysteries.</p>
+                    <p>Extraterrestrial investigations.</p>
+                    <p>Final treasures of the occult number 666.</p>
+                    <p>Freemasonry of the holy pentazygon.</p>
+                    <p>From mammon to the beast of revelation.</p>
+                    <p>Giant gemstones of the devil’s library.</p>
+                    <p>Guarded rarities of the devil’s library.</p>
+                    <p>Harrowing midnight in the house of gno.</p>
+                    <p>Hermes shattering the idol of immanence.</p>
+                    <p>Hieroglyphic circuits of uncreation.</p>
+                    <p>Impending titanocratic restoration.</p>
+                    <p>Incursions from beyond the horizon.</p>
+                    <p>Influence of the atlantean titanocracy.</p>
+                    <p>In the footsteps of the imperceptible.</p>
+                    <p>Justify the name and number of the beast.</p>
+                    <p>Late iterations of the occult number 666.</p>
+                    <p>Meditation into the apocalyptic beast.</p>
+                    <p>Metal letters of the american rebellion.</p>
+                    <p>Midnight turnings in the house of gno.</p>
+                    <p>Morbid occasions of the occult number 666.</p>
+                    <p>Moses in the darkness of ancient egypt.</p>
+                    <p>Mystical passage into invisibility.</p>
+                    <p>Nominative numerics and sublimation.</p>
+                    <p>Names and numbers of the ancient language.</p>
+                    <p>Nightfall of the atlantean titanocracy.</p>
+                    <p>Nominative numerics modernization.</p>
+                    <p>Numeric nomination of invisibility.</p>
+                    <p>Of the anachronistic twin eternities.</p>
+                    <p>On hailing the great beast and its number.</p>
+                    <p>On the authorized spelling of qabballah.</p>
+                    <p>On the reference of numeric nomination.</p>
+                    <p>On the titanic calls of the great worms.</p>
+                    <p>Pagan origins of the holy pentazygon.</p>
+                    <p>Ritual, doctrine, and prophecy of the aoe.</p>
+                    <p>Reckoning the veiled number of the beast.</p>
+                    <p>Silence regarding the apocalyptic beast.</p>
+                    <p>Sinister echoes of the occult number 666.</p>
+                    <p>Technology of the draconic mysteries.</p>
+                    <p>The absurdity of outer nothingness.</p>
+                    <p>The abyss of nocturnal illumination.</p>
+                    <p>The alphabetical ordering of the entity.</p>
+                    <p>The anglossic gateway to titanocracy.</p>
+                    <p>The antigravity of prehistoric time.</p>
+                    <p>The apocalyptic secrets of the masons.</p>
+                    <p>The authorization of american english.</p>
+                    <p>The chant of the thirty-sixth trigon.</p>
+                    <p>The curse and torture of prometheus.</p>
+                    <p>The delight of invisible illumination.</p>
+                    <p>The disillusionment of six, six, six.</p>
+                    <p>The endlessness of dark christianity.</p>
+                    <p>The end of the simulation hypothesis.</p>
+                    <p>The eschatology of jack the giant killer.</p>
+                    <p>The father of apocalyptic numerology.</p>
+                    <p>The forgotten titanocratic ideology.</p>
+                    <p>The gods of illuminated invisibility.</p>
+                    <p>The great beast of apocalyptic destiny.</p>
+                    <p>The guide of the thirty-sixth trigon.</p>
+                    <p>The harrowing masonic lies of jahbulon.</p>
+                    <p>The hellish hollow earth hypothesis.</p>
+                    <p>The history of the hollow earth model.</p>
+                    <p>The horn of the thirty-sixth trigon.</p>
+                    <p>The immortal name and number of the beast.</p>
+                    <p>The independence of the printing press.</p>
+                    <p>The legible numerology of the eschaton.</p>
+                    <p>The library of printing technologies.</p>
+                    <p>The loom of the thirty-sixth trigon.</p>
+                    <p>The lost artistry of dragon-slaying.</p>
+                    <p>The maze of illuminated invisibility.</p>
+                    <p>The messianic name and number of the beast.</p>
+                    <p>The midnight tracts of ultimate escape.</p>
+                    <p>The name and number of the beast leviathan.</p>
+                    <p>The nine worlds of complete decimation.</p>
+                    <p>The oneness of the draconic mysteries.</p>
+                    <p>The pass of the thirty-sixth trigon.</p>
+                    <p>The path of illuminated invisibility.</p>
+                    <p>The priestcraft of dark christianity.</p>
+                    <p>The sanctification of iambic pentameter.</p>
+                    <p>The secret exploration of the masons.</p>
+                    <p>The secret grave of moses the egyptian.</p>
+                    <p>The secret illuminated name of jahbulon.</p>
+                    <p>The sibyl of apocalyptic numerology.</p>
+                    <p>The song of the thirty-sixth trigon.</p>
+                    <p>The suggestive space of possibility.</p>
+                    <p>The summoning of the printing press.</p>
+                    <p>The sun of illuminated invisibility.</p>
+                    <p>The suspicions of dark christianity.</p>
+                    <p>The terrestrial masonry of jahbulon.</p>
+                    <p>The thirty-sixth trigon of mithras.</p>
+                    <p>The thirty-sixth trigon of timaeus.</p>
+                    <p>The time of eschatological titanocracy.</p>
+                    <p>The transcendental tentacles of sodom.</p>
+                    <p>The transubstantiation of satanism.</p>
+                    <p>The treasures of numeric nomination.</p>
+                    <p>The tridentity of dark christianity.</p>
+                    <p>The trustless guide to titanocracy.</p>
+                    <p>The tunnel to the draconic mysteries.</p>
+                    <p>The twin testament of timelessness.</p>
+                    <p>The twisting paths of late tradition.</p>
+                    <p>The twisting path of americanization.</p>
+                    <p>The unfinished stations of the cross.</p>
+                    <p>The veiled transmutation of sacrifice.</p>
+                    <p>Through antigravity and time-travel.</p>
+                    <p>Timelessly circle the occult number 666.</p>
+                    <p>Titanic miniaturization capitalism.</p>
+                    <p>Titanic miniaturization of the digit.</p>
+                    <p>To explore apocalyptic numerology.</p>
+                    <p>Towards a titanocratic conflagration.</p>
+                    <p>Towers of titanic miniaturization.</p>
+                    <p>Trigonometry and dark christianity.</p>
+                    <p>Twists in comparative cosmography.</p>
+                    <p>Ways through the beast of revelation.</p>
+                    <p>What thing of night has now ascended here?</p>
+                    <p>Yoga and the hollow earth underground.</p>
+                    <p>A cipher of the epileptics' elucidations.</p>
+                    <p>The qabbalistically catatonic passages.</p>
+                    <p>The galvanisation protecting a pulse.</p>
+                    <p>Utterly hysteric for angel schisms.</p>
+                    <p>Coding occidental schismatic schematics.</p>
+                    <p>The subtle pulse of a schismatic ethos.</p>
+                    <p>The blanket of the deep dark nothingness.</p>
+                    <p>The cthuhlu numerological utterance.</p>
+                    <p>Cthulhu utterly pulsating the deep.</p>
+                    <p>It is the abyss of utter annihilation.</p>
+                    <p>The nothingness, utter annihilation.</p>
+                    <p>The utter hell-scape of a beasts' pulses.</p>
+                </div>
+                <div>
+                    <h3>680 AQ</h3>
+                    <p>Atlantean ordinances of the exogeneous.</p>
+                </div>
+                <div>
+                    <h3>777 AQ</h3>
+                    <p>Mary gave birth to the only true king, jesus.</p>
+                </div>
+            </div>            
+        </div>
+
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

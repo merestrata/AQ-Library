@@ -1,0 +1,204 @@
+
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("../font/roboto-mono-400.woff2") format('woff2');
+}
+
+:root {
+	--font-family: "Arial";
+	--font-family-mono: "Roboto Mono";
+}
+
+body{
+	font-family: var(--font-family);
+    background-color: white;
+    color: black;
+	margin: auto;
+}
+
+header{
+	text-align: center;
+}
+
+header span{
+	margin-left: 8%;
+	margin-right: 8%;
+}
+
+#moreLink{
+	font-size: 16px;
+	font-weight: normal;
+}
+
+#moreLink:hover{
+	text-decoration: underline 1.5px solid;
+	cursor: pointer;
+}
+
+
+#phrases{
+	text-align: center;
+	display: none;
+}
+
+#main-title{
+    text-align: center;
+	display: inline-block;
+}
+
+#pulse{
+
+	text-align: center;
+	display: none;
+}
+
+#group1{
+	display: inline-block;
+	vertical-align:top;
+}
+
+#group2{
+	display: inline-block;
+	vertical-align:top;
+}
+
+#group3{
+	display: inline-block;
+	vertical-align:top;
+}
+
+.groups{
+
+	margin-left: 3em;
+	margin-right: 3em;
+}
+
+#line1{
+	width: 75%;
+	height: 0.2em;
+	background-color: black;
+	border: none;
+	border-radius: 1em;
+	margin-top: 2em;
+}
+
+label{
+	font-size: large;
+	font-weight: 700;
+	display: block;
+	text-align: center;
+	margin-bottom: 0.5em;
+}
+
+input{
+	margin-bottom: 0.5em;
+	border: 3px solid white;
+	outline: 2px solid gray;
+}
+
+input:focus{
+	border: 3px solid white;
+	outline: 2px solid gray;
+}
+
+
+#line{
+	width: 50%;
+	height: 0.2em;
+	background-color: black;
+	border: none;
+	border-radius: 1em;
+}
+
+
+
+
+
+#boxSuggestions{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: left;
+}
+
+#boxSuggestions input{
+	width: 20em;
+	font-size: 18px;
+}
+
+
+#boxSearchSum{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: center;
+}
+
+#boxSearchSum input{
+	width: 10em;
+	font-size: 18px;
+}
+
+
+#boxSearchPhrase{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: right;
+}
+
+#boxSearchPhrase input{
+	width: 20em;
+	font-size: 18px;
+}
+
+
+
+.resultBox{
+	font-weight: 700;
+	text-align: center;
+}
+#options{
+	text-align: center;
+}
+
+#options div{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#exist, #existSum, #existPhrase{
+	text-align: center;
+	font-weight: normal;
+}
+
+#sendResult{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1em;
+}
+
+#content{
+	margin-left: 12%;
+}
+
+#content p{
+	margin-left: 2%;
+}
+
+#content div{
+	margin-top: 3%;
+}
+
+
+
+
+@media screen and (min-width: 1300px) {
+    body{
+		width: 1300px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    body{
+		width: 100%;
+    }
+}
