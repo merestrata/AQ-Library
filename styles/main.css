@@ -1,4 +1,4 @@
-
+/* Geral */
 @font-face {
 	font-family: "Roboto Mono";
 	src: url("../font/roboto-mono-400.woff2") format('woff2');
@@ -9,13 +9,23 @@
 	--font-family-mono: "Roboto Mono";
 }
 
+html{
+	padding-left: calc(100vw - 100%);
+}
+
 body{
 	font-family: var(--font-family);
     background-color: white;
     color: black;
 	margin: auto;
 }
+/* -------------------------------------------------------------------------- */
 
+
+
+
+
+/* Header */
 header{
 	text-align: center;
 }
@@ -24,55 +34,221 @@ header span{
 	margin-left: 8%;
 	margin-right: 8%;
 }
-
-#moreLink{
-	font-size: 16px;
-	font-weight: normal;
-}
-
-#moreLink:hover{
-	text-decoration: underline 1.5px solid;
-	cursor: pointer;
-}
-
-
-#phrases{
-	text-align: center;
-	display: none;
-}
-
 #main-title{
     text-align: center;
 	display: inline-block;
 }
+/* -------------------------------------------------------------------------- */
 
-#pulse{
 
-	text-align: center;
-	display: none;
-}
 
+
+
+/* Normal Content */
 #group1{
-	display: inline-block;
 	vertical-align:top;
+	float: left;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 #group2{
-	display: inline-block;
 	vertical-align:top;
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 #group3{
-	display: inline-block;
 	vertical-align:top;
+	float: left;
+	text-align: right;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
-.groups{
-
-	margin-left: 3em;
-	margin-right: 3em;
+#contentAll{
+	margin-top: -2em;
+	margin-bottom: 2em;
+	float: right;
+	position: relative;
+	left: -50%;
+	text-align: left;
 }
 
+#contentAllF{
+	margin-top: 1em;
+	position: relative;
+	left: 50%;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* Special Content */
+#groupSpe1{
+	vertical-align:top;
+	float: left;
+	text-align: left;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#groupSpe2{
+	vertical-align:top;
+	float: left;
+	text-align: center;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
+
+}
+
+#groupSpe3{
+	vertical-align:top;
+	float: left;
+	text-align: right;
+	list-style-type: none;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#contentSpecial{
+	margin-top: -2em;
+	margin-bottom: 2em;
+	float: right;
+	position: relative;
+	left: -50%; /* or right 50% */
+	text-align: left;
+}
+
+#contentSpecialF{
+	margin-top: 1em;
+	position: relative;
+	left: 50%;
+}
+
+#newTitle{
+	margin-bottom: -6em;
+	display: inline-block;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+#allSug{
+	display: none;
+	margin-left:-37%;
+	margin-top: .5em;	
+}
+
+
+
+
+
+/* Three options to click */
+#random{
+	margin-left: 13%;
+	margin-top: 0;
+	float: left;
+}
+
+#info{
+	margin-right: 13%;
+	margin-top: 0;
+	float: right;
+}
+
+#all{
+	margin-left: 30%;
+	margin-top: 0;
+	float: left;
+	position: relative;
+}
+
+#all:hover, #random:hover, #info:hover{
+	text-decoration: underline solid black;
+	cursor: pointer;
+}
+
+#allSug{
+	display: none;
+	margin-left:-37%;
+	margin-top: .5em;	
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* Boxes to fill with text */
+.resultBox{
+	font-weight: 700;
+	text-align: center;
+}
+
+#options{
+	text-align: center;
+}
+
+#options div{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#exist, #existSum, #existPhrase{
+	text-align: center;
+	font-weight: normal;
+}
+
+/* Each Box */
+#boxSuggestions{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: left;
+}
+#boxSuggestions input{
+	width: 20em;
+	font-size: 18px;
+}
+
+#boxSearchSum{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: center;
+}
+#boxSearchSum input{
+	width: 10em;
+	font-size: 18px;
+}
+
+#boxSearchPhrase{
+	display: inline-block;
+	margin-top: 2em;
+	text-align: right;
+}
+#boxSearchPhrase input{
+	width: 20em;
+	font-size: 18px;
+}
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+/* Rests - horizontal lines and label/inpu */
 #line1{
 	width: 75%;
 	height: 0.2em;
@@ -109,88 +285,13 @@ input:focus{
 	border: none;
 	border-radius: 1em;
 }
+/* -------------------------------------------------------------------------- */
 
 
 
 
 
-#boxSuggestions{
-	display: inline-block;
-	margin-top: 2em;
-	text-align: left;
-}
-
-#boxSuggestions input{
-	width: 20em;
-	font-size: 18px;
-}
-
-
-#boxSearchSum{
-	display: inline-block;
-	margin-top: 2em;
-	text-align: center;
-}
-
-#boxSearchSum input{
-	width: 10em;
-	font-size: 18px;
-}
-
-
-#boxSearchPhrase{
-	display: inline-block;
-	margin-top: 2em;
-	text-align: right;
-}
-
-#boxSearchPhrase input{
-	width: 20em;
-	font-size: 18px;
-}
-
-
-
-.resultBox{
-	font-weight: 700;
-	text-align: center;
-}
-#options{
-	text-align: center;
-}
-
-#options div{
-	margin-left: 2em;
-	margin-right: 2em;
-}
-
-#exist, #existSum, #existPhrase{
-	text-align: center;
-	font-weight: normal;
-}
-
-#sendResult{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1em;
-}
-
-#content{
-	margin-left: 12%;
-}
-
-#content p{
-	margin-left: 2%;
-}
-
-#content div{
-	margin-top: 3%;
-}
-
-
-
-
+/* Resize and adjust */
 @media screen and (min-width: 1300px) {
     body{
 		width: 1300px;
@@ -202,3 +303,38 @@ input:focus{
 		width: 100%;
     }
 }
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Parts to finish/complete in the future */
+/* Link to submit  longer and several phrases */
+#moreLink{
+	font-size: 16px;
+	font-weight: normal;
+}
+/* #moreLink:hover{
+	text-decoration: underline 1.5px solid;
+	cursor: pointer;
+} */
+
+/* New menus */
+#phrases{
+	text-align: center;
+	display: none;
+}
+
+#pulse{
+	text-align: center;
+	display: none;
+}
+/* -------------------------------------------------------------------------- */
